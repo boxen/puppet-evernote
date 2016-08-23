@@ -1,31 +1,7 @@
-**This Boxen module is now deprecated. The advised method for installing applications with Boxen is to now use [homebrew-cask](http://caskroom.io/). Add the following to your manifest to install Evernote using brewcask:**
-
-```puppet
-package { 'evernote': provider => 'brewcask' }
-```
-
----
-
 # Evernote Puppet Module for Boxen
 
-[![Build Status](https://travis-ci.org/boxen/puppet-evernote.png?branch=master)](https://travis-ci.org/boxen/puppet-evernote)
+Deprecated in favour of [brewcask][1] and [Boxen's in built support for
+homebrew/brewcask][2].
 
-## Usage
-
-To use the latest version of Evernote:
-```puppet
-include evernote
-```
-
-To use a specific version of Evernote:
-```puppet
-class { 'evernote':
-  sourceUri => 'https://cdn1.evernote.com/mac-smd/public/Evernote_RELEASE_5.6.0_450741.dmg'
-}
-```
-
-
-## Required Puppet Modules
-
-* boxen
-
+[1]: https://caskroom.github.io/
+[2]: https://github.com/boxen/puppet-boxen/blob/master/manifests/personal.pp#L14-L17
